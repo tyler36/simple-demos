@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-8 space-y-4">
+  <dialog id="popup" class="backdrop:bg-green-500 rounded backdrop:opacity-30">
+    I'm a modal.
+    <button onClick="popup.close()" class="hover:text-gray-500">x</button>
+  </dialog>
+  <button onClick="popup.showModal()" class="rounded bg-blue-400 px-2 py-1 text-white">Click</button>
+  <div class="text-gray-500 text-sm">
+    <a href="https://caniuse.com/?search=dialog">https://caniuse.com/?search=dialog</a>
+  </div>
+</body>
+</html>
